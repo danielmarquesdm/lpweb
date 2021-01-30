@@ -3,7 +3,11 @@
 }
 
 header {
+  color: #f9f9f9;
   text-align: center;
+  /* background-color: #3400ee2f; */
+  background-color: #6200ee;
+  padding: 20px;
 }
 
 header h1 {
@@ -14,18 +18,55 @@ header p {
   font-size: 25px;
 }
 
-img {
-  max-height: 300px;
-  width: 100%;
+#resumo {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.galeria {
+  display: flex;
+}
+
+.sections {
+  display: flexbox;
 }
 
 section {
   margin-top: 40px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
 }
 
 section h3 {
+  color: #6200ee;
   padding: 10px;
   font-size: 30px;
   margin-bottom: 20px;
   /* background-color: #ff4000; */
+}
+
+img {
+  width: 50%;
+  margin: 10px;
+}
+
+#populacao {
+  font-size: 50px;
+}
+
+#cards {
+  display: flex;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #6200ee;
+  margin-bottom: 10px;
+}
+
+div p {
+  font-size: 18px;
 }
