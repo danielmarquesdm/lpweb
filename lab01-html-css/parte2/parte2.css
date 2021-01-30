@@ -1,0 +1,31 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+img {
+  max-height: 300px;
+  width: 100%;
+}
+
+section {
+  margin-top: 40px;
+}
+
+section h3 {
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  /* background-color: #ff4000; */
+}
