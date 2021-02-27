@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- CSS Alternativo -->
+    <link rel="stylesheet" href="css/style-add-books.css" />
+
+    <!-- Bootstrap Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Livraria Book.net - Novo Livro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!--Use .container-fluid para conteúdo responsivo com largura fluída, isto é, toda a largura da janela.-->
+          <a id="home" class="navbar-brand" href="./index.html"
+            ><span itemid="home-link"
+              ><i class="bi bi-book-half"></i> Book.net</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form id="search" class="d-flex">
+            <input
+              id="search-form"
+              class="form-control"
+              type="search"
+              placeholder="Pesquisar..."
+              aria-label="Search"
+            />
+            <button id="btn-search" class="btn btn-outline-link" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <div class="d-flex">
+            <!--d-flex caracteriza um elemento do container flexbox-->
+            <a
+              id="btn-profile"
+              class="btn btn-link"
+              href="#"
+              role="button"
+              type="link"
+              ><i class="bi bi-person-circle"></i> Usuário</a
+            >
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+          <div id="main-menu" class="nav-item dropdown">
+            <a
+              itemid="main-dropdown-menu"
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarScrollingDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30px" height="30px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+
+            </a>
+            <ul
+              id="menu-container"
+              class="dropdown-menu"
+              aria-labelledby="navbarScrollingDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="./index.html"
+                  ><i class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg></i> Home</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./add-clients.html"
+                  ><i class="bi bi-people-fill"></i> Clientes</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./books-client.html"
+                  ><i class="bi bi-bookshelf"></i> Livros</a
+                >
+              </li>
+              <!--<li><hr class="dropdown-divider"></li> - divisor-->
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><i class="bi bi-basket2"></i> Reservas</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><i class="bi bi-cash"></i> Vendas</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="container-fluid">
+            <nav id="page-map" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./index.html">
+                    <!-- Mapa <i class="bi bi-caret-right"> -->
+                    </i> Home</a
+                  >
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Novo Livro
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="alert alert-dark" role="alert">
+      Preencha os campos abaixo para cadastrar um novo livro. Campos com "*" são
+      campos obrigatórios!
+    </div>
+    <main>
+      <!--
+    <div id="main-background">
+      <img src="../book.net/img/main-background.jpg" class="img-fluid" alt="carregando...">
+    </div>
+    -->
+      <div id="sign-user" class="container-fluid">
+        <div id="sign-user-title" class="row justify-content-start">
+          <h1>Novo Livro</h1>
+        </div>
+        <form class="row">
+          <div id="sign-CPF" class="form-floating col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingCPF"
+              placeholder="CPF"
+            />
+            <label for="floatingInput">*ISBN</label>
+          </div>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="nome completo"
+            />
+            <label for="floatingInput">*Nome do livro</label>
+          </div>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="Editora"
+            />
+            <label for="floatingInput">*Editora</label>
+          </div>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="Autor"
+            />
+            <label for="floatingInput">*Autor</label>
+          </div>
+          <div id="sign-date" class="form-floating col-md-6">
+            <input
+              type="date"
+              class="form-control"
+              id="floatingDate"
+              placeholder="ano de publicação"
+            />
+            <label for="floatingDate">*Ano de publicação</label>
+          </div>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="Editora"
+            />
+            <label for="floatingInput">*Assunto</label>
+          </div>
+          <div>
+            <label for="obtencao">Disponível para:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Aluguel
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Compra
+              </label>
+            </div>
+          </div>
+          <div>
+            <label for="procedencia">Procedência:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Nacional
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Importado
+              </label>
+            </div>  
+          </div>
+          <input class="form-control" type="text" placeholder="Quantidade disponível em estoque: 10" aria-label="readonly input example" readonly>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="Editora"
+            />
+            <label for="floatingInput">*Preço de venda</label>
+          </div>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="Editora"
+            />
+            <label for="floatingInput">*Preço de aluguel</label>
+          </div>
+          <div id="sign-username" class="form-floating col-md-6">
+            <input
+              type="name"
+              class="form-control form-control"
+              id="floatingName"
+              placeholder="Editora"
+            />
+            <label for="floatingInput">*Preço de renovação de aluguel</label>
+          </div>
+          <label id="lblField"><h6>*Campos Obrigatórios</h6></label>
+          <div id="btn-new-user" class="col-12">
+            <button type="submit" class="btn btn-outline-dark">
+              Cadastrar
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

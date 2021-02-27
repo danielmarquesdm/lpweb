@@ -1,0 +1,20 @@
+#cadastro {
+  background-color: #000;
+  border-radius: 4px;
+}
+
+.remover,
+.editar,
+.ver {
+  text-decoration: none;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+table {
+  margin: 50px;
+}

@@ -1,0 +1,115 @@
+[itemid='home-link'] {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#search {
+  margin-right: 12rem;
+}
+
+#search-form {
+  width: 50rem;
+}
+
+#btn-search {
+  border-color: transparent;
+  color: black;
+  margin-left: -2.5rem;
+}
+
+#btn-profile {
+  border-color: transparent;
+  color: black;
+  margin-left: -11rem; /**margem negativa necessária para sair do container**/
+  text-decoration: none;
+}
+
+[itemid='main-dropdown-menu'] {
+  color: white;
+  margin-left: 2rem;
+}
+
+/**
+body{
+    background-image: url(../img/main-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+**/
+#page-map ol li a {
+  margin-left: 0.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+#sign-user {
+  margin-top: 3rem;
+}
+
+#sign-user-title {
+  margin-left: 30rem;
+  margin-bottom: 3rem;
+}
+
+#sign-username {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-CPF {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-date {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-tel {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-CEP {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-address {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-city {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-state {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+#sign-email {
+  /**width: 35rem;**/
+  margin-bottom: 3rem;
+}
+
+label {
+  margin-left: 0.5rem;
+}
+
+#lblField {
+  margin-top: -2rem;
+  color: red;
+}
+
+/**
+header{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+**/

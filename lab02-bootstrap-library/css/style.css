@@ -1,0 +1,51 @@
+[itemid = "home-link"]{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#search{
+    margin-right: 12rem;
+
+}
+
+#search-form{
+    width: 50rem;
+}
+
+#btn-search{
+   border-color: transparent;
+   color:black;
+   margin-left: -2.5rem;
+}
+
+#btn-profile{
+    border-color: transparent;
+    color:black;
+    margin-left: -11rem; /**margem negativa necessária para sair do container**/
+    text-decoration: none;
+}
+
+[itemid="main-dropdown-menu"]{
+    color: white;
+    margin-left: 2rem;
+}
+
+/**
+body{
+    background-image: url(../img/main-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+**/
+#page-map ol li{
+    margin-left: 0.25rem;
+}
+
+/**
+header{
+    position: fixed;
+    position: absolute;
+    top: 0;
+}
+**/
+

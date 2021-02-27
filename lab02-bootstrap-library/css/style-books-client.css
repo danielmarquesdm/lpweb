@@ -1,0 +1,15 @@
+img {
+  width: 14em;
+  height: 18em;
+}
+
+#vitrine {
+  margin: 5em;
+}
+
+#livros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  text-align: center;
+}
